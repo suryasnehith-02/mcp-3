@@ -29,8 +29,8 @@ POST /github/create-repo
 
 Testing with curl:
 
-curl -X GET http://localhost:3000/github/user(for user retrieval)
-curl -X GET http://localhost:3000/github/repos(for git repo retrieval)
+curl -X GET http://localhost:3000/github/user (for user retrieval)
+curl -X GET http://localhost:3000/github/repos (for git repo retrieval)
 curl -X POST http://localhost:3000/github/create-repo \
 -H "Content-Type: application/json" \
 -d '{"name": "new-repo", "description": "A test repo", "privateRepo": true}'(for creating git repo)
