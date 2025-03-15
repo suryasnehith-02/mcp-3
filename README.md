@@ -35,7 +35,7 @@ curl -X POST http://localhost:3000/github/create-repo \
 -H "Content-Type: application/json" \
 -d '{"name": "new-repo", "description": "A test repo", "privateRepo": true}'(for creating git repo)
 
-License
+License: 
 This project is open-source and available under the MIT License.
 
 
