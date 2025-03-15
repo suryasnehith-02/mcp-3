@@ -9,7 +9,7 @@ const TOKEN = process.env.GITHUB_TOKEN;
 
 app.use(express.json()); 
 
-
+// path for retrieving user details
 app.get('/github/user', async (req, res) => {
     try {
         const response = await axios.get(`${GITHUB_API}/user`, {
@@ -21,7 +21,7 @@ app.get('/github/user', async (req, res) => {
     }
 });
 
-
+//path for retrieving user git repositories
 app.get('/github/repos', async (req, res) => {
     try {
         const response = await axios.get(`${GITHUB_API}/user/repos`, {
@@ -33,6 +33,7 @@ app.get('/github/repos', async (req, res) => {
     }
 });
 
+//path for creating a new git repo
 app.post('/github/create-repo', async (req, res) => {
     try {
         const { name, description, privateRepo } = req.body;
