@@ -15,9 +15,7 @@ npm install
 This project requires the following dependencies:
 express: For handling HTTP requests
 axios: For making API requests to GitHub
-dotenv: For managing environment variables
-
-Create a .env file in the project root and add your GitHub token: GITHUB_TOKEN=your_github_personal_access_token PORT=3000
+dotenv: For managing environment variables Create a .env file in the project root and add your GitHub token: GITHUB_TOKEN=your_github_personal_access_token PORT=3000
 
 Start Server: npm start
 
